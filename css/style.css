@@ -1,0 +1,92 @@
+/* Body e estrutura geral */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+/* Header Styles */
+.header {
+    background-color: #0C2856;
+    color: #ffffff;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C2856;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo do Footer */
+.footer-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+    gap: 1rem;
+}
+.footer-logo-pe{
+    width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o Conteúdo Principal */
+.section-title {
+    font-size: 1.8rem;
+    color: #0C2856;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0C2856;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.custom-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.custom-list li::before {
+    content: "•";
+    color: #0C2856;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.link {
+    color: #0C2856;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
