@@ -80,6 +80,9 @@ html, body {
     position: absolute;
     left: 0;
 }
+.nav-links a:hover {
+  text-decoration: underline;
+}
 
 .link {
     color: #0C2856;
