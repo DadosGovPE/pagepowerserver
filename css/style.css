@@ -24,6 +24,33 @@ html, body {
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.header-title {
+    margin-left: auto;  /* Empurra o header-title para a direita */
+    margin-right: auto; /* Empurra o header-title para a esquerda, centralizando-o */
+    text-align: center; /* O text-align: center nos seus h1/p já faz o texto ficar centralizado DENTRO do div */
+}
+
+.topbar-header {
+    background-color: #0C2856;
+}
+
+.topbar-header .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*justify-content: space-between;*/
+    margin-left: 10px;
+}
+
+.topbar-header .container > div:last-child {
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 70%; /*O tamanho da fonte pode ser ajustado conforme necessário */
+}
+
+.topbar-header .container > div:last-child span {
+    font-weight: bold;
+}
 
 /* Footer Styles */
 .footer {

@@ -12,53 +12,84 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
-    <!-- retirar o comentario da div abaixo quando for fazer o menu funcional -->
-    <!-- <div class="container d-flex justify-content-between align-items-center"> -->
-      <a href="/"><img src="assets/Logo_PE.svg" alt="Governo de Pernambuco" class="logo"></a>
-      <!-- <nav class="nav-links">
-        <a href="#paineis">Painéis</a>
-        <a href="#equipe">Equipe</a>
-      </nav> -->
-    </div>
-  </header>
+<div class="top-bar">
+
+    <div class="topbar-header">
+          <div class="container">
+              <div>
+                  <img src="assets/icon-star.png" alt="icone estrela" class="logo-star">
+              </div>
+              <div>Governo de <span>Pernambuco</span></div>
+          </div>    
+
+      </div>
+    <!-- Header Menu-->
+    <header class="header d-flex py-3"> <div class="container-fluid d-flex align-items-center">
+
+            <div class="header-title">
+                <h1 class="text-center">Power BI Report Server</h1>
+                <p class="text-center">Acesso e Suporte</p>
+            </div>
+        </div>
+    </header>
+
+  </div> 
 
   <!-- Conteúdo em grade -->
   <div class="container">
     <div class="grid-container">
 
       <div class="card-info">
-        <h2>1. Obter login e senha pela 1ª vez</h2>
+        <h2>1. Deseja obter um login e senha pela 1ª vez</h2>
         <ul>
-          <li>Peça ao seu núcleo setorial de informática (NSI) para providenciar junto à DGA/ATI.</li>
-          <li>Caso sua secretaria não possua NSI, envie e-mail para <a href="mailto:lista-pcad@ati.pe.gov.br">lista-pcad@ati.pe.gov.br</a>.</li>
+           <li>Peça ao seu núcleo setorial de informática (NSI) para providenciar junto à DGA/ATI.</li>
+      <li>Caso sua secretaria não possua NSI, envie e-mail para <a href="mailto:lista-pcad@ati.pe.gov.br"
+          class="link">lista-pcad@ati.pe.gov.br</a> para mais informações.</li>
         </ul>
       </div>
 
       <div class="card-info">
-        <h2>2. Resetar senha do Power BI</h2>
+        <h2>2. Já tem o login e deseja reset de senha</h2>
         <ul>
-          <li>Envie e-mail para <a href="mailto:csati@ati.pe.gov.br">csati@ati.pe.gov.br</a> com nome completo e e-mail institucional.</li>
-          <li>Você receberá uma senha temporária com instruções para troca.</li>
-          <li>Após alterar a senha, o acesso será liberado.</li>
+         <li>Envio de E-mail para <a href="mailto:csati@ati.pe.gov.br" class="link">csati@ati.pe.gov.br</a>, intitulado
+        "Power BI Report Server - Reset de Senha". Informar nome completo e e-mail institucional (@seplag.pe.gov.br).
+      </li>
+      <li>Após o atendimento da solicitação, a ATI envia e-mail com senha temporária para o endereço institucional.
+        Nele, seguem as instruções para alteração de senha.</li>
+      <li>Após alterar senha no link informado pela ATI, o acesso ao Report Server fica liberado com o uso da nova
+        senha.</li>
         </ul>
       </div>
 
       <div class="card-info">
-        <h2>3. Já tem senha mas não consegue logar</h2>
+        <h2>3. Caso você já possua login e senha e não consegue logar</h2>
         <ul>
-          <li><a href="https://alterasenha.powerbi.pe.gov.br" target="_blank">Alterar Senha Power BI</a>.</li>
-          <li>Use <code>powerbi\</code> antes do nome de usuário e sua senha atual.</li>
-          <li>Crie nova senha com os requisitos exigidos.</li>
+          <li>Possivelmente sua senha expirou, clique no link: <a
+          href="https://alterasenha.powerbi.pe.gov.br/RDWeb/Pages/en-US/login.aspx?ReturnUrl=/RDWeb/Pages/en-US/Default.aspx"
+          class="link" target="_blank">Alterar Senha Power BI</a>.</li>
+      <li>Uma vez no site de alterar senha use <code>powerbi\</code> antes do nome de usuário e insira a senha atual. Clique em "click here".</li>
+      <li>Crie uma nova senha com os requisitos de complexidade exigidos.</li>
+      <li>Tente acessar novamente em <a href="http://powerbi.pe.gov.br/" class="link" target="_blank">PowerBi</a></li>
         </ul>
       </div>
 
       <div class="card-info">
-        <h2>4. Acesso para secretarias externas à SEPLAG</h2>
+        <h2>4. É de uma secretaria externa à SEPLAG e deseja acessar o painel de Execução
+      Orçamentária</h2>
         <ul>
-          <li><a href="https://docs.google.com/document/d/1rNnvum7I27CsfKqE6_BVlUHSs1d1qOY3HVNKRPs-HXE/edit?tab=t.0">Formatar termo de responsabilidade</a> com base no modelo apropriado.</li>
-          <li>Enviar SEI para o IGPE.</li>
-          <li>Repassar login + número do SEI para <a href="mailto:ncd.igpe@gmail.com">ncd.igpe@gmail.com</a>.</li>
+          <li>Formatar termo de responsabilidade sobre a utilização dos dados baseado nesse <a href="https://docs.google.com/document/d/1rNnvum7I27CsfKqE6_BVlUHSs1d1qOY3HVNKRPs-HXE/edit?tab=t.0" 
+        class="link" target="_blank" rel="noopener noreferrer">documento.</a></li>
+      <li>Enviar SEI para Instituto de Gestão (IG/SEPLAG).</li>
+      <li>Repassar seu login do Power BI Report Server para <a href="mailto:ncd.igpe@gmail.com"
+          class="link">ncd.igpe@gmail.com</a> junto com o número do SEI enviado.</li>
+        </ul>
+      </div>
+
+      <div class="card-info">
+        <h2>5. Ainda em dúvidas?</h2>
+        <ul>
+          <li>Visite a wiki <a href="https://www.wiki.pe.gov.br/mediawiki/index.php/Servidor_de_Relatorios_do_Power_BI" class="link" target="_blank">Servidor de Relatorios do Power BI</a></li>
+      <li>Envie um E-mail para <a href="mailto:ncd.igpe@gmail.com" class="link">lista-pcad@ati.pe.gov.br</a></li>
         </ul>
       </div>
 
